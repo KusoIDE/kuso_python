@@ -7,3 +7,6 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:setup-keys t)
 (setq jedi:complete-on-dot t)
+
+;; Setup hideshow
+(add-hook 'python-mode-hook         'hs-minor-mode)
