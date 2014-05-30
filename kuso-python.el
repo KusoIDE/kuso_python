@@ -14,7 +14,7 @@
 
 ;; Setup flycheck
 (add-hook 'python-mode-hook (lambda ()
-                              (flycheck-select-checker 'python-pylint)
+                              (flycheck-select-checker 'python-flake8)
                               (flycheck-mode)))
 
 ;; (setq KUSO_PYTHON_PATH default-directory)
