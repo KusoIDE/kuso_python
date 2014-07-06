@@ -13,6 +13,7 @@
 (add-hook 'python-mode-hook 'hs-minor-mode)
 
 ;; Setup flycheck
+(require 'flycheck)
 (add-hook 'python-mode-hook (lambda ()
                               (flycheck-select-checker 'python-flake8)
                               (flycheck-mode)))
